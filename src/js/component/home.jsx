@@ -64,9 +64,10 @@ const JumboTron = () => {
   );
 };
 
+
 const Card = (props) => {
   return (
-    <div className="card" style={{padding: "1.8rem"}} style={{maxWidth: "300px"}}>
+    <div className="col-md card p-0 g-4">
       <img src={props.imageURL} className="card-img-top"  alt="..." />
       <div className="card-body">
         <h5 className="card-title">{props.title}</h5>
@@ -94,9 +95,10 @@ const Home = () => {
     <div className="container-fluid">
       <NavBar />
       <JumboTron />
-      <Card title="Cat" description="Cute Cat to take away" imageURL="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=1600" buttonURL="http://progatcornella.org/web/"></Card>
-      <Card></Card>
-      <Card></Card>
+      <div className="row justify-content-center">
+        <Card title="Cat" description="Cute Cat to take away" imageURL="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=1600" buttonURL="http://progatcornella.org/web/"></Card>
+        <Card title="Cat" description="Cute Cat to take away" imageURL="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=1600" buttonURL="http://progatcornella.org/web/"></Card>            <Card title="Cat" description="Cute Cat to take away" imageURL="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=1600" buttonURL="http://progatcornella.org/web/"></Card>
+      </div>
     </div>
   );
 };

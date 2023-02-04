@@ -1,0 +1,8 @@
+1. Menu bootstrap navar
+2. Jumbotron
+3. Card component  
+  - img
+  - title
+  - descrption
+  - buttonLabel
+  - Button URL
